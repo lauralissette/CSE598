@@ -104,3 +104,5 @@ In order to bring down this network this command can be used:
 ./byfn.sh down
 ```
 Running docker ps again, we notice that all the containers have been destroyed.
+
+Now we will tweak this to generate our own network configuration.

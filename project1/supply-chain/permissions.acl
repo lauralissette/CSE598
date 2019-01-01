@@ -1,0 +1,401 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+rule NetworkAdminUser {
+    description: "Grant business network administrators full access to user resources"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "**"
+    action: ALLOW
+}
+
+rule NetworkAdminSystem {
+    description: "Grant business network administrators full access to system resources"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "org.hyperledger.composer.system.**"
+    action: ALLOW
+}
+
+rule BuyerACLCreate {
+    description: "Enable Buyers to execute all actions on an Order"
+    participant(m): "org.acme.supplychain.Buyer"
+    operation: READ, CREATE, UPDATE
+    resource(v): "org.acme.supplychain.**"
+    transaction(tx): "org.acme.supplychain.CreateOrder"
+    condition: (v.buyer.buyerID == m.getIdentifier())
+    action: ALLOW
+}
+
+
+rule BuyerACLBuy {
+    /*
+    *YOUR CODE HERE
+    */
+    
+}
+
+
+rule BuyerACLCancel {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+
+}
+
+/**
+*
+**/
+rule BuyerACLDispute {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule BuyerACLResolve {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+}
+
+/**
+*
+**/
+rule BuyerACLAuthorizePayment {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+}
+
+/**
+*
+**/
+rule BuyerACL {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+}
+
+/**
+*
+*/
+rule netAccessBuyer {
+  /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+}
+
+
+/**
+*
+**/
+rule SellerOrderFromSupplier {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule SellerRequestPayment {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule SellerResolve {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule SellerRefund {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule SellerACL {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+*/
+rule netAccessSeller {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule ProviderRequestShipping {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule ProviderBackorder {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule ProviderPayRequest {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule ProviderResolve {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule ProviderRefund {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule ProviderACL {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+*/
+rule netAccessProvider {
+  /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule ShipperRefund {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule ShipperResolve {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule ShipperDelivering {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule ShipperDelivered {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule ShipperACL {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+*/
+rule netAccessShipper {
+  /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+**/
+rule FinanceCoACL2 {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+/**
+*
+rule FinanceCoACL {
+    /*
+    * YOUR CODE HERE
+    *
+    */
+
+    
+
+}
+
+/**
+*
+*/
+rule netAccessFinanceCo {
+  description: "Allow Finance Company access to the network"
+  participant: "org.acme.supplychain.FinanceCo"
+  operation: ALL
+  resource: "org.hyperledger.composer.system.**"
+  action: ALLOW
+}
