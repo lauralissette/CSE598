@@ -7,5 +7,8 @@ An overview of the network we want to build:
 * 3 Organizations
 * Every organization has their own channel
 * Every channel consists of 5 peers
-* Within each channel one of the peers acts as an anchor peer allowing inter-channel configuration.
+* Within each channel one of the peers acts as an anchor peer allowing inter-channel communication.
 * There are 3 orderers for the network
+
+Guidelines for completing the project:
+------------------------

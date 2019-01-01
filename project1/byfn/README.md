@@ -78,3 +78,15 @@ There are many standards you can use to generate these certificates. These are g
 - The chaincode must be part of a channel.
 - Specific business logic can be written in different chaincodes.
 
+## Further Steps:
+--------------------
+
+[Accessing your AWS virtual machine using SSH](ssh_instruction.md)
+
+
+[Installing all pre-requisites required to run hyperledger fabric and hyperledger composer](prereqs.md)
+
+[Bringing up your first hyperledger fabric network](walkthrough.md)
+
+[The final submission requirement guidelines regarding building a custom hyperledger fabric network](custom_network.md)
+
