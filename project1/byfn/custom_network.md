@@ -119,12 +119,38 @@ After completing this file you can add a create a directory called channel-artif
 mkdir channel-artifacts
 ```
 
+You need to generate profiles according to the specification provided.
+
+- Profiles need to incorporate all conditions which are: 3 organizations, 3 channel configurations and anchor peer configurations.
+
+- Make a profile named ThreeOrgsOrdererGenesis and add 3 organizations to the consortium
+- You need to make a profile in such a way that each organization has a seperate channel.
+You can name the profiles OrgsChannel1, OrgsChannel2 and so on.
+
+
 Then we can generate the genesis block using the command:
 
 ```
 ./configtxgen -profile <profile name> -outputBlock ./channel-artifacts/genesis.block
 ```
 
+We can generate channels using the following command:
 
+```
+././configtxgen -profile <profile name> -outpuCreateChannelTx ./channel-artifacts/channel1.tx -channelID <Channel Name>
+```
+- The channels must be stores as channel1.tx, channel2.tx and so on. The  channelIDs also should be Channel1, Channel2 and so on.
+
+- Also configure the anchor peers properly so that every organizations anchor peer can communicate with other organization.
+
+This command can be used for configuring anchor peers:
+
+```
+configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/Org1MSPanchors.tx -channelID $CHANNEL_NAME -asOrg Org1MSP
+```
+
+- To complete these files refer to the official hyperledger fabric documentation which can be found here:
+
+[Hyperledger Fabric Documentation](https://hyperledger-fabric.readthedocs.io/en/release-1.3/build_network.html)
 
 
