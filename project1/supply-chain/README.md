@@ -364,3 +364,8 @@ To complete this application you need to update all ACL rules according to these
 
 28. For the rule **netAccessFinanceCo** allow the Finance Company access to the network.
 
+Also write a script called **buildanddeploy.sh** that creates the business archive file, create network and admin connection cards and deploys the network.
+
+Help can be found here :
+
+[Hyperledger Fabric Developer Tutorial](https://hyperledger.github.io/composer/latest/tutorials/developer-tutorial)

@@ -137,7 +137,7 @@ Then we can generate the genesis block using the command:
 We can generate channels using the following command:
 
 ```
-././configtxgen -profile <profile name> -outpuCreateChannelTx ./channel-artifacts/channel1.tx -channelID <Channel Name>
+./configtxgen -profile <profile name> -outpuCreateChannelTx ./channel-artifacts/channel1.tx -channelID <Channel Name>
 ```
 - The channels must be stores as channel1.tx, channel2.tx and so on. The  channelIDs also should be Channel1, Channel2 and so on.
 
@@ -153,15 +153,17 @@ configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts
 
 [Hyperledger Fabric Documentation](https://hyperledger-fabric.readthedocs.io/en/release-1.3/build_network.html)
 
-Next we need to build docker-compose file for bringing up the network.
+**To complete this phase you need to submit both complete only the parts mentioned above**
+------------------------------------------------------
+
+Next steps that will be taken : docker-compose file for bringing up the network.
 
 - Docker-compose is a tool that orchestrates docker containers.
 
 - We can start containers manually, using ansible or kubernetes also, but for the sake of this project we will use docker-compose.
 
-- Firstly copy the **base** folder and **docker-compose-cli.yaml** file to the **custom_network** folder.
+- You do not need to write the docker compose script, but bear in mind that the network will be run using the correctly written docker compose script and if there are some error in the config files then the grade for that criteria might be affected in further phases.
 
-- It's convenient to reuse that code.
 
-- Inside the docker compose file there are listed various services. A docker container would be started for each service. You need to include the correct number of containers in your solution.
-
+Grading Criteria:
+--------------------

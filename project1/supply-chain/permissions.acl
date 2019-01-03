@@ -43,6 +43,13 @@ rule BuyerACLBuy {
     /*
     *YOUR CODE HERE
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
+    
     
 }
 
@@ -52,6 +59,12 @@ rule BuyerACLCancel {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
 
 }
@@ -64,6 +77,12 @@ rule BuyerACLDispute {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -77,6 +96,12 @@ rule BuyerACLResolve {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 }
@@ -89,6 +114,12 @@ rule BuyerACLAuthorizePayment {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 }
@@ -101,6 +132,12 @@ rule BuyerACL {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 }
@@ -113,6 +150,12 @@ rule netAccessBuyer {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 }
@@ -126,6 +169,12 @@ rule SellerOrderFromSupplier {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -139,6 +188,12 @@ rule SellerRequestPayment {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -152,6 +207,12 @@ rule SellerResolve {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -165,6 +226,12 @@ rule SellerRefund {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -178,6 +245,12 @@ rule SellerACL {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -191,6 +264,12 @@ rule netAccessSeller {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -204,6 +283,12 @@ rule ProviderRequestShipping {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -217,6 +302,12 @@ rule ProviderBackorder {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -230,6 +321,12 @@ rule ProviderPayRequest {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -243,6 +340,12 @@ rule ProviderResolve {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -256,6 +359,12 @@ rule ProviderRefund {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -269,6 +378,12 @@ rule ProviderACL {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -282,6 +397,12 @@ rule netAccessProvider {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -295,6 +416,12 @@ rule ShipperRefund {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -308,6 +435,12 @@ rule ShipperResolve {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -321,6 +454,12 @@ rule ShipperDelivering {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -334,6 +473,12 @@ rule ShipperDelivered {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -347,6 +492,12 @@ rule ShipperACL {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -360,6 +511,12 @@ rule netAccessShipper {
     * YOUR CODE HERE
     *
     */
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 
     
 
@@ -373,9 +530,12 @@ rule FinanceCoACL2 {
     * YOUR CODE HERE
     *
     */
-
-    
-
+    description: "Description of the Conditional ACL rule"
+    participant(p): "org.acme.SampleParticipant"
+    operation: ALL
+    resource(r): "org.acme.SampleAsset"
+    condition: (p === r)
+    action: ALLOW
 }
 /**
 *
