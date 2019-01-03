@@ -153,4 +153,15 @@ configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts
 
 [Hyperledger Fabric Documentation](https://hyperledger-fabric.readthedocs.io/en/release-1.3/build_network.html)
 
+Next we need to build docker-compose file for bringing up the network.
+
+- Docker-compose is a tool that orchestrates docker containers.
+
+- We can start containers manually, using ansible or kubernetes also, but for the sake of this project we will use docker-compose.
+
+- Firstly copy the **base** folder and **docker-compose-cli.yaml** file to the **custom_network** folder.
+
+- It's convenient to reuse that code.
+
+- Inside the docker compose file there are listed various services. A docker container would be started for each service. You need to include the correct number of containers in your solution.
 
