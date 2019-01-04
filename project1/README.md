@@ -28,7 +28,7 @@ This project consists of two phases:
 
 **Submission Guidelines**
 
-You can either work on virtual machine or on your personal machine. Students need to make sure that while submitting, the contents are on the AWS virtual machine and the directory structure is /home/ubuntu/fabric-sample/custom_network 
+You can either work on virtual machine or on your personal machine. Students need to make sure that while submitting, the contents are on the AWS virtual machine and the directory structure is /home/ubuntu/fabric-samples/custom_network 
 
 **Units:**
 
