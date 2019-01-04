@@ -26,13 +26,17 @@ This project consists of two phases:
 - docker-compose.yaml file used to configure the specified hyperledger fabric network
 - crypto-config.yaml file used to generate the cryptographic material for the hyperledger fabric network
 
+**Submission Guidelines**
+
+You can either work on virtual machine or on your personal machine. Students need to make sure that while submitting, the contents are on the AWS virtual machine and the directory structure is /home/ubuntu/fabric-sample/custom_network 
+
 **Units:**
 
-- !! To be inserted
+- Unit 1 
 
 **Due Date:**
 
-- !! To be inserted
+- 16th January 2019
 
 ## Phase 2:
 --------------------------------------
@@ -55,13 +59,25 @@ This project consists of two phases:
 
 - Entire folder named **supply-chain**
 
+**Submission Guidelines**
+
+You can either work on virtual machine or on your personal machine. Students need to make sure that while submitting, the contents are on the AWS virtual machine and the directory structure is /home/ubuntu/fabric-sample/custom_network 
 
 **Units:**
 
-- !! To be inserted
+- Unit 2 and Unit 3
 
 **Due Date:**
 
-- !! To be inserted
+- 27th Jan 2019
+
+# Report
+
+A comprehensive report describing everything done in project 1. Report should strictly follow the specification provided.
+
+**Due Date**
+
+- 27th Jan 2019
+
 
 
