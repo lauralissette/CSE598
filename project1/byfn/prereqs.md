@@ -109,3 +109,10 @@ sudo chmod u+x prereqs-ubuntu.sh
 ./prereqs-ubuntu.sh
 ```
 After this point we're done installing pre-requisistes and get started with using code from the hyperledger fabric repository
+
+Instructions for installing development environment for Hyperledger Composer:
+----------------------------------------------------------------------------
+Follow these steps:
+[Installing the development environment](https://hyperledger.github.io/composer/latest/installing/development-tools.html)
+
+And now can get started with the coding part of the project.
