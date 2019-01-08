@@ -28,7 +28,7 @@ This project consists of two phases:
 
 **Submission Guidelines**
 
-You can either work on virtual machine or on your personal machine. Students need to make sure that while submitting, the contents are on the AWS virtual machine and the directory structure is /home/ubuntu/fabric-samples/custom_network 
+You need to submit the entire custom_network folder by uploading it to your work directory on vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the vocareum machine inside the work directory and then submit it.
 
 **Units:**
 
@@ -61,7 +61,7 @@ You can either work on virtual machine or on your personal machine. Students nee
 
 **Submission Guidelines**
 
-You can either work on virtual machine or on your personal machine. Students need to make sure that while submitting, the contents are on the AWS virtual machine and the directory structure is /home/ubuntu/supply-chain 
+You need to submit the entire supply-chain folder by uploading it to your work directory on vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the vocareum machine inside the work directory and then submit it.
 
 **Units:**
 
