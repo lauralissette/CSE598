@@ -108,7 +108,7 @@ describe('Finance Network', function () {
     let businessNetworkConnection;
     before(function () {
         businessNetworkConnection = new BusinessNetworkConnection();
-        return businessNetworkConnection.connect('admin@supplychain');
+        return businessNetworkConnection.connect('admin@supply-chain');
     });
 
     describe('#createOrder', () => {
@@ -633,30 +633,3 @@ describe('Finance Network', function () {
     });
 
 });
-
-/**
- * display using console.log the properties of the inbound object
- * @param {displayObjectProperties} _name - string name of object
- * @param {displayObjectProperties}  _obj - the object to be parsed
- * @utility
- */
-/*
-function displayObjectProperties(_name, _obj)
-{
-    for(let propt in _obj){ console.log(_name+' object property: '+propt ); }
-}
-*/
-/**
- * display using console.log the properties of each property in the inbound object
- * @param {displayObjectProperties} _string - string name of object
- * @param {displayObjectProperties}  _object - the object to be parsed
- * @utility
- */
-/*
-function displayObjectValues (_string, _object)
-{
-    for (let prop in _object){
-        console.log(_string+'-->'+prop+':\t '+(((typeof(_object[prop]) === 'object') || (typeof(_object[prop]) === 'function'))  ? typeof(_object[prop]) : _object[prop]));
-    }
-}
-*/
