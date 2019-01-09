@@ -9,12 +9,15 @@ Remove the older versions of docker installed:
 sudo apt-get remove docker docker-engine docker.io
 
 ```
+
 Update the apt package index:
 
 ```
 sudo apt-get update
 ```
+
 Install packages to allow apt to use a repository over HTTPS:
+
 ```
 sudo apt-get install \
     apt-transport-https \
@@ -22,20 +25,25 @@ sudo apt-get install \
     curl \
     software-properties-common
 ```
+
 Add Docker’s official GPG key:
+
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 Add the stable repository:
+
 ```
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    (lsb_release -cs) \
    Stable"
 ```
+
 ```
 sudo apt-get update
 ```
+
 Install Docker CE
 
 ```
@@ -53,4 +61,3 @@ repository and run the dash client:
 ```
 https://github.com/dashpay/dash/
 ```
-
