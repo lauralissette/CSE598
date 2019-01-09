@@ -63,6 +63,8 @@ You need to submit the entire custom_network folder by uploading it to your work
 
 You need to submit the entire supply-chain folder by uploading it to your work directory on vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the vocareum machine inside the work directory and then submit it.
 
+**Make sure your network version inside package.json is set to 0.0.1 before submitting**
+
 **Units:**
 
 - Unit 2 and Unit 3
