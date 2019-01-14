@@ -34,17 +34,18 @@ You need to submit the entire custom_network folder by uploading it to your work
 
 - Your final Phase 1 folder submisison through Vocareum is due by 11:59 p.m. Wednesday, January 25, 2019.
 
+
 **Using the byfn Files:**
  
  Use the files in the byfn (Build Your First Network) folder in the following order:
  
- (1) ssh_instructions.md: This file contains instructions for accessing the AWS Virtual Machine.
+ (1) **ssh_instructions.md.**  This file contains instructions for accessing the AWS Virtual Machine.
  
- (2) prereqs.md: This file provides instructions for installing the prerequisites you and the environment for HyperLedger Composer.
+ (2) **prereqs.md.**  This file provides instructions for installing the prerequisites you and the environment for HyperLedger Composer.
  
- (3) walkthrough.md: This file walks you through the process of building your first network.
+ (3) **walkthrough.md.**  This file walks you through the process of building your first network.
  
- (4) custom_network.md: This file presents how to create a custom HyperLedger Fabric network configuration as well as how to complete Phase I.
+ (4) **custom_network.md.**  This file presents how to create a custom HyperLedger Fabric network configuration as well as how to complete Phase I.
  
  
 
