@@ -8,10 +8,10 @@ This project consists of two phases:
 ## Phase 1:
 --------------------------------------
 
-- In this phase students will learn about various tools required to install and use hyperledger fabric.
+- In this phase you will learn about various tools required to install and use hyperledger fabric.
 - Hyperledger Fabric is an enterprise grade distributed ledger based on blockchain technology that uses smart contracts to enforce trust between parties.
-- The first task in this project is to install all necessary tools related to hyperledger fabric and hyperledger composer on an AWS virtual machine and bringing up their first hyperledger network using the scripts provided.
-- Further students will experiment with .yaml files to create a specified hyperledger fabric network configuration and explore ways in which the cryptographic material for the network can be generated.
+- The first task in this project is to install all necessary tools related to hyperledger fabric and hyperledger composer on an AWS virtual machine and bring up your first hyperledger network using the scripts provided.
+- Then you will experiment with .yaml files to create a specified hyperledger fabric network configuration and explore ways in which the cryptographic material for the network can be generated.
 
 **Technologies used:**
 
@@ -28,23 +28,19 @@ This project consists of two phases:
 
 **Submission Guidelines**
 
-You need to submit the entire custom_network folder by uploading it to your work directory on vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the vocareum machine inside the work directory and then submit it.
-
-**Units:**
-
-- Unit 1 
+You need to submit the entire custom_network folder by uploading it to your work directory on Vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the Vocareum machine inside the work directory and then submit it. 
 
 **Due Date:**
 
-- 16th January 2019
+- Your final Phase 1 folder submisison through Vocareum is due by 11:59 p.m. Wednesday, January 25, 2019.
 
 ## Phase 2:
 --------------------------------------
 
-- In this phase students will learn about various tools required to build a business application using hyperledger composer.
+- In this phase you will learn about various tools required to build a business application using hyperledger composer.
 - Hyperledger Composer is a set of collaboration tools, built with JavaScript, for building blockchain business networks that make it simple and fast for business owners and developers to create smart contracts and blockchain applications to solve business problems.
-- The students will build an application that tracks the transaction history and attribute changes associated with the life-cycle of an order propagating through a supply chain.
-- Students will learn about building a model for a business application and also write transaction processor functions, permissions for various actors and transaction inside the supply chain network.
+- You will build an application that tracks the transaction history and attribute changes associated with the life-cycle of an order propagating through a supply chain.
+- You will learn about building a model for a business application and also write transaction processor functions, permissions for various actors, and transaction inside the supply chain network.
 
 **Technologies used:**
 
@@ -61,25 +57,21 @@ You need to submit the entire custom_network folder by uploading it to your work
 
 **Submission Guidelines**
 
-You need to submit the entire supply-chain folder by uploading it to your work directory on vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the vocareum machine inside the work directory and then submit it.
+You need to submit the entire supply-chain folder by uploading it to your work directory on Vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the Vocareum machine inside the work directory and then submit it.
 
 **Make sure your network version inside package.json is set to 0.0.1 before submitting**
 
-**Units:**
-
-- Unit 2 and Unit 3
-
 **Due Date:**
 
-- 27th Jan 2019
+Your final Phase 2 package submisison through Vocareum is due by 11:59 p.m. Sunday, February 3, 2019.
 
 # Report
 
-A comprehensive report describing everything done in project 1. Report should strictly follow the specification provided.
+A comprehensive project report describing your work for Project 1 is also due for this project. You will find the report template and the staff-graded project tool for submitting your report at the end of Week 4 in the course on Coursera. Your report should strictly follow the report specifications provided.
 
 **Due Date**
 
-- 27th Jan 2019
+Your Project 1 report submitted through Coursera is due by 11:59 p.m. Sunday, February 3, 2019.
 
 
 
