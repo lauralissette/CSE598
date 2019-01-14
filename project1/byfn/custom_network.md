@@ -7,7 +7,7 @@ An overview of the network we want to build:
 * Domain used: example.com
 * 3 Organizations:
 
-Orderer organizations are named
+Orderer organizations are named:
 
 1. Orderer1
 
