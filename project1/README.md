@@ -41,7 +41,7 @@ You need to submit the entire custom_network folder by uploading it to your work
  
  (1) **ssh_instructions.md.**  This file contains instructions for accessing the AWS Virtual Machine.
  
- (2) **prereqs.md.**  This file provides instructions for installing the prerequisites you and the environment for HyperLedger Composer.
+ (2) **prereqs.md.**  This file provides instructions for installing the prerequisites you need and the environment for HyperLedger Composer.
  
  (3) **walkthrough.md.**  This file walks you through the process of building your first network.
  
@@ -89,6 +89,21 @@ A comprehensive project report describing your work for Project 1 is also due fo
 Your Project 1 report submitted through Coursera is due by 11:59 p.m. Sunday, February 3, 2019.
 
 **Using the supply-chain Files:**
+
+Use the sub-folders and files in the supply-chain folder in the following order (and note those you may ignore):
+
+(1) **models (folder).**  This folder contains the model for a supply chain network.
+
+(2) **lib (folder).**  This folder contains logic for smart contracts.
+
+(3) **permissions.acl.** This file contains permissions for various actors within the network.
+
+**Test (folder).**  This folder contains a test file that you may ignore, but it needs to be present.
+
+**.eslintrc.yml.**  You may ignore this system configuration file, but it needs to be present.
+
+**package.json.**  You may ignore this system configuration file, but it needs to be present.
+
 
 
 
