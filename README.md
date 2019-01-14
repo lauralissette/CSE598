@@ -1,7 +1,7 @@
 # CSE598_Spring-A_2019
 
 
-This private repository contains instructions and materials needed to complete CSE598 Spring A 2019's Project 1. Instructions and materials needed for Project 2 will added by 1/19/19.
+This private repository contains instructions and materials needed to complete CSE 598 Spring A 2019's Project 1. Instructions and materials needed for Project 2 will added by January 19, 2019.
 
 
 **Step 1:** Open the "project1" folder above and read its README file, "Introduction to Project 1."
