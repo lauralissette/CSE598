@@ -115,4 +115,4 @@ Instructions for installing development environment for Hyperledger Composer:
 Follow these steps:
 [Installing the development environment](https://hyperledger.github.io/composer/latest/installing/development-tools.html)
 
-And now can get started with the coding part of the project.
+And now you can get started with the coding part of the project.
