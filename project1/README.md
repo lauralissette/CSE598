@@ -1,11 +1,11 @@
-# Project 1 Description:
+# Introduction to Project 1 
 
 ## Experimenting with permissioned blockchains using Hyperledger
 ----------------------------------------------------------------
 
-This project consists of two phases:
+This project consists of two phases. Each phase is described below, including submission requirements and due dates.
 
-## Phase 1:
+## Phase 1
 --------------------------------------
 
 - In this phase you will learn about various tools required to install and use hyperledger fabric.
@@ -26,7 +26,7 @@ This project consists of two phases:
 - docker-compose.yaml file used to configure the specified hyperledger fabric network
 - crypto-config.yaml file used to generate the cryptographic material for the hyperledger fabric network
 
-**Submission Guidelines**
+**Submission Guidelines:**
 
 You need to submit the entire custom_network folder by uploading it to your work directory on Vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the Vocareum machine inside the work directory and then submit it. 
 
@@ -34,7 +34,7 @@ You need to submit the entire custom_network folder by uploading it to your work
 
 - Your final Phase 1 folder submisison through Vocareum is due by 11:59 p.m. Wednesday, January 25, 2019.
 
-## Phase 2:
+## Phase 2
 --------------------------------------
 
 - In this phase you will learn about various tools required to build a business application using hyperledger composer.
@@ -42,7 +42,7 @@ You need to submit the entire custom_network folder by uploading it to your work
 - You will build an application that tracks the transaction history and attribute changes associated with the life-cycle of an order propagating through a supply chain.
 - You will learn about building a model for a business application and also write transaction processor functions, permissions for various actors, and transaction inside the supply chain network.
 
-**Technologies used:**
+**Technologies Used:**
 
 - [Hyperledger Fabric](https://hyperledger-fabric.readthedocs.io/en/release-1.3/)
 - [Hyperledger Composer](https://hyperledger.github.io/composer/latest/introduction/introduction.html)
@@ -55,11 +55,11 @@ You need to submit the entire custom_network folder by uploading it to your work
 
 - Entire folder named **supply-chain**
 
-**Submission Guidelines**
+**Submission Guidelines:**
 
 You need to submit the entire supply-chain folder by uploading it to your work directory on Vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the Vocareum machine inside the work directory and then submit it.
 
-**Make sure your network version inside package.json is set to 0.0.1 before submitting**
+**Make sure your network version inside package.json is set to 0.0.1 before submitting.**
 
 **Due Date:**
 
@@ -69,7 +69,7 @@ Your final Phase 2 package submisison through Vocareum is due by 11:59 p.m. Sund
 
 A comprehensive project report describing your work for Project 1 is also due for this project. You will find the report template and the staff-graded project tool for submitting your report at the end of Week 4 in the course on Coursera. Your report should strictly follow the report specifications provided.
 
-**Due Date**
+**Due Date:**
 
 Your Project 1 report submitted through Coursera is due by 11:59 p.m. Sunday, February 3, 2019.
 
