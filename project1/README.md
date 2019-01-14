@@ -34,7 +34,7 @@ You need to submit the entire custom_network folder by uploading it to your work
 
 - Your final Phase 1 folder submisison through Vocareum is due by 11:59 p.m. Wednesday, January 25, 2019.
 
-## Phase 2
+## Phase 2: Supply Chain Network Application (use supply-chain folder)
 --------------------------------------
 
 - In this phase you will learn about various tools required to build a business application using hyperledger composer.
