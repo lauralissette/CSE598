@@ -5,7 +5,7 @@
 
 This project consists of two phases. Each phase is described below, including submission requirements and due dates.
 
-## Phase 1
+## Phase 1: Build Your First Network (use byfn folder)
 --------------------------------------
 
 - In this phase you will learn about various tools required to install and use hyperledger fabric.
