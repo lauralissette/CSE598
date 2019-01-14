@@ -37,6 +37,7 @@ You need to submit the entire custom_network folder by uploading it to your work
 
 **Using the byfn Files:**
  
+ 
  Use the files in the byfn (Build Your First Network) folder in the following order:
  
  (1) **ssh_instructions.md.**  This file contains instructions for accessing the AWS Virtual Machine.
@@ -80,15 +81,9 @@ You need to submit the entire supply-chain folder by uploading it to your work d
 
 Your final Phase 2 package submisison through Vocareum is due by 11:59 p.m. Sunday, February 3, 2019.
 
-# Report
-
-A comprehensive project report describing your work for Project 1 is also due for this project. You will find the report template and the staff-graded project tool for submitting your report at the end of Week 4 in the course on Coursera. Your report should strictly follow the report specifications provided.
-
-**Due Date:**
-
-Your Project 1 report submitted through Coursera is due by 11:59 p.m. Sunday, February 3, 2019.
 
 **Using the supply-chain Files:**
+
 
 Use the sub-folders and files in the supply-chain folder in the following order (and note those you may ignore):
 
@@ -103,6 +98,18 @@ Use the sub-folders and files in the supply-chain folder in the following order 
 **.eslintrc.yml.**  You may ignore this system configuration file, but it needs to be present.
 
 **package.json.**  You may ignore this system configuration file, but it needs to be present.
+
+
+
+# Report
+
+A comprehensive project report describing your work for Project 1 is also due for this project. You will find the report template and the staff-graded project tool for submitting your report at the end of Week 4 in the course on Coursera. Your report should strictly follow the report specifications provided.
+
+**Due Date:**
+
+Your Project 1 report submitted through Coursera is due by 11:59 p.m. Sunday, February 3, 2019.
+
+
 
 
 
