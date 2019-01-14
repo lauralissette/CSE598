@@ -39,9 +39,13 @@ You need to submit the entire custom_network folder by uploading it to your work
  Use the files in the byfn (Build Your First Network) folder in the following order:
  
  (1) ssh_instructions.md: This file contains instructions for accessing the AWS Virtual Machine.
+ 
  (2) prereqs.md: This file provides instructions for installing the prerequisites you and the environment for HyperLedger Composer.
+ 
  (3) walkthrough.md: This file walks you through the process of building your first network.
+ 
  (4) custom_network.md: This file presents how to create a custom HyperLedger Fabric network configuration as well as how to complete Phase I.
+ 
  
 
 ## Phase 2: Supply Chain Network Application (use supply-chain folder)
