@@ -1,4 +1,4 @@
-Creating a custom hyperledger fabric network configuration
+Creating a Custom Hyperledger Fabric Network Configuration
 ----------------------------------------------------------
 We will build a network configuration from scratch including all the identity certificates, organizations, peer configurations, channel configurations.
 
@@ -23,7 +23,7 @@ Peer Organizations are named:
 * Within each organization one of the peers acts as an anchor peer allowing inter-channel communication.
 * There is a single orderer for the network.
 
-Guidelines for completing the project:
+Guidelines for completing Phase I of the project:
 ------------------------
 
 - We will first start with cryptographic configuration (crypto-config) which will be a yaml based configuration.
@@ -153,7 +153,7 @@ configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts
 
 [Hyperledger Fabric Documentation](https://hyperledger-fabric.readthedocs.io/en/release-1.3/build_network.html)
 
-**To complete this phase you need to submit both complete only the parts mentioned above**
+**To complete this phase you need to submit only the parts referenced above.**
 ------------------------------------------------------
 
 Next steps that will be taken : docker-compose file for bringing up the network.
@@ -162,8 +162,4 @@ Next steps that will be taken : docker-compose file for bringing up the network.
 
 - We can start containers manually, using ansible or kubernetes also, but for the sake of this project we will use docker-compose.
 
-- You do not need to write the docker compose script, but bear in mind that the network will be run using the correctly written docker compose script and if there are some error in the config files then the grade for that criteria might be affected in further phases.
-
-
-Grading Criteria:
---------------------
+- You do not need to write the docker compose script, but bear in mind that the network will be run using the correctly written docker compose script and if there are some errors in the config files then the result for that criteria might be affected in further phases.
