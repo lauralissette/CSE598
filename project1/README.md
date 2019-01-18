@@ -28,7 +28,7 @@ This project consists of two phases. Each phase is described below, including su
 
 **Submission Guidelines:**
 
-You need to submit the entire custom_network folder by uploading it to your work directory on Vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the Vocareum machine inside the work directory and then submit it. 
+You need to submit the entire **custom_network folder** by uploading it to your work directory on Vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the Vocareum machine inside the work directory and then submit it. 
 
 **Due Date:**
 
