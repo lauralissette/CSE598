@@ -52,7 +52,7 @@ There are many standards you can use to generate these certificates. These are g
 - This process of generating certificate for a user is known as enrolment.
 - These certificates can also be generated using OpenSSL or any other tool, but Fabric-CA is a high quality tool provided.
 
-## 2. Fabric Certificate Authority:
+## 2. Fabric Peer:
 - Fabric peer is where the ledger and the blockchain is stored.
 - The peer can update or query the ledger data. 
 - A peer can be part of multiple channels(will be explained later). In simple terms channels can what can be used to achieve isolation in a hyperledger fabric network
