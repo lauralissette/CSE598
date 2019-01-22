@@ -137,7 +137,7 @@ Then we can generate the genesis block using the command:
 We can generate channels using the following command:
 
 ```
-./configtxgen -profile <profile name> -outpuCreateChannelTx ./channel-artifacts/channel1.tx -channelID <Channel Name>
+./configtxgen -profile <profile name> -outputCreateChannelTx ./channel-artifacts/channel1.tx -channelID <Channel Name>
 ```
 - The channels must be stores as channel1.tx, channel2.tx and so on. The  channelIDs also should be Channel1, Channel2 and so on.
 
