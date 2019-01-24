@@ -32,7 +32,7 @@ You need to submit the entire **custom_network folder** by uploading it to your 
 
 **Due Date:**
 
-- Your final Phase 1 folder submisison through Vocareum is due by 11:59 p.m. Wednesday, January 25, 2019.
+- Your final Phase 1 folder submisison through Vocareum is due by 11:59 p.m. Sunday, January 27, 2019.
 
 
 **Using the byfn Files:**
@@ -107,7 +107,7 @@ A comprehensive project report describing your work for Project 1 is also due fo
 
 **Due Date:**
 
-Your Project 1 report submitted through Coursera is due by 11:59 p.m. Sunday, February 3, 2019.
+Your Project 1 report submitted through Coursera is due by 11:59 p.m. Monday, February 4, 2019.
 
 
 
