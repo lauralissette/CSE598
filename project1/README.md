@@ -5,7 +5,7 @@
 
 This project consists of two phases. Each phase is described below, including submission requirements and due dates.
 
-## Phase 1: Build Your First Network (use byfn folder)
+## Phase I: Build Your First Network (use byfn folder)
 --------------------------------------
 
 - In this phase you will learn about various tools required to install and use hyperledger fabric.
@@ -50,7 +50,7 @@ You need to submit the entire **custom_network folder** by uploading it to your 
  
  
 
-## Phase 2: Supply Chain Network Application (use supply-chain folder)
+## Phase II: Supply Chain Network Application (use supply-chain folder)
 --------------------------------------
 
 - In this phase you will learn about various tools required to build a business application using hyperledger composer.
