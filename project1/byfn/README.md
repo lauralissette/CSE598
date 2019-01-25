@@ -16,7 +16,7 @@ Let's begin with clearing out some misconceptions about Hyperledger:
 
 - Hyperledger although a permissioned blockchain can be made as public as we want. The only condition is that any two parties interacting must have some kind of network visibility.
 
-- A 51% attack is not appliacable to hyperledger since there is no concept of mining and computation power.
+- A 51% attack is not applicable to hyperledger since there is no concept of mining and computation power.
 
 How hyperledger establishes trust:
 ----------------------
