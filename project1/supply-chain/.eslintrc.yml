@@ -15,9 +15,6 @@ globals:
     post: true
     emit: true
 rules:
-    linebreak-style:
-        - error
-        - unix
     quotes:
         - error
         - single
