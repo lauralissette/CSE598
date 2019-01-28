@@ -77,13 +77,13 @@ You need to submit the entire supply-chain folder by uploading it to your work d
 
 **Make sure your network version inside package.json is set to 0.0.1 before submitting.**
 
+
 **Due Date:**
 
 Your final Phase 2 package submisison through Vocareum is due by 11:59 p.m. Sunday, February 3, 2019.
 
 
 **Using the supply-chain Files:**
-
 
 Use the sub-folders and files in the supply-chain folder in the following order (and note those you may ignore):
 
