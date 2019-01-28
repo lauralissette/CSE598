@@ -75,7 +75,18 @@ You need to submit the entire **custom_network folder** by uploading it to your 
 
 You need to submit the entire supply-chain folder by uploading it to your work directory on Vocareum. **AWS virtual machine contents will not be submitted for grading**. You should use **scp** to copy your work onto the Vocareum machine inside the work directory and then submit it.
 
+
+**IMPORTANT SUBMISSION NOTES:** 
+
+(1) The folder supply-chain is large. Please tar or zip the directory with the proper name before placing it in the Vocareum work-area for submission:
+
+     supply-chain.zip  OR supply-chain,tar.gz
+
+The grading is configured to accept only one of the compressed two files, with supply-chain.tar.gz as the first choice. Again, please tar or zip the directory on your machine before placing it in the Vocareum work-area for submission. If you put the expanded directory in the workarea, the IDE may an extremely long time or never come up. 
+
 **Make sure your network version inside package.json is set to 0.0.1 before submitting.**
+
+(2) Each grading for each submission will take 10 or more minutes because the submission data is huge (66MB for zip, 55MB for tar.gz), and a session-based grading server is needed for each grading job. The overhead itself takes 7+ minutes. The actual grading takes 3+ minutes. As a result, Vocareum recommends that, after submission, you come back after 10 minutes, then check [Details] and [Grades] for your results.
 
 
 **Due Date:**
