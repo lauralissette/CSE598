@@ -80,7 +80,7 @@ You need to submit the entire supply-chain folder by uploading it to your work d
 
 (1) The folder supply-chain is large. Please tar or zip the directory with the proper name before placing it in the Vocareum work-area for submission:
 
-     supply-chain.zip  OR supply-chain,tar.gz
+     supply-chain.zip  OR supply-chain.tar.gz
 
 The grading is configured to accept only one of the compressed two files, with supply-chain.tar.gz as the first choice. Again, please tar or zip the directory on your machine before placing it in the Vocareum work-area for submission. If you put the expanded directory in the workarea, the IDE may an extremely long time or never come up. 
 
