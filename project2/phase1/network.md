@@ -28,7 +28,7 @@ https://github.com/dashpay/dash/
 ```
 to 
 
-- install all the pre-requisites in order to run the dash client
+- install all the pre-requisites in order to run the dash client (these will already be installed on the grading server)
 - run a copy of dash client, play with the RPC calls and see how it works.
 ( Please run it in regtest mode. testnet or the mainnet option downloads the whole blockshain before you can do anything, it requires more storage than provided in the AWS machine.)
 
