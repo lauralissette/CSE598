@@ -11,9 +11,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-
 //Use this variable to change the status of the order
+'use strict';
 var orderStatus = {
     Created: {code: 1, text: 'Order Created'},
     Bought: {code: 2, text: 'Order Purchased'},
@@ -31,13 +30,8 @@ var orderStatus = {
     Refund: {code: 12, text: 'Order Refund Requested'},
     Refunded: {code: 13, text: 'Order Refunded'}
 };
-
-
 //Namespace Variable that can be reused while accessing registries
 var ns = 'org.acme.supplychain';
-
-
-
 //Function to create an order, Reference this function to fill all other functions
 /**
  * create an order to purchase
@@ -53,7 +47,7 @@ function CreateOrder(purchase) {
     return getAssetRegistry('org.acme.supplychain.Order')
         .then(function (assetRegistry) {
             return assetRegistry.update(purchase.order)
-            .then (function (_res) 
+            .then (function (_res)
             {
                 z2bEmit('Created', purchase.order);
                 return (_res);
@@ -67,8 +61,22 @@ function CreateOrder(purchase) {
  */
 function Buy(purchase) {
     // YOUR CODE HERE
-
-
+    if (purchase.order.status === JSON.stringify(orderStatus.Created))
+    {
+        purchase.order.buyer = purchase.buyer;
+        purchase.order.seller = purchase.seller;
+        purchase.order.bought = new Date().toISOString();
+        purchase.order.status = JSON.stringify(orderStatus.Bought);
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
+     }
 }
 /**
  * Record a request to cancel an order
@@ -77,9 +85,22 @@ function Buy(purchase) {
  */
 function OrderCancel(purchase) {
     // YOUR CODE HERE
-
-
-
+    if ((purchase.order.status === JSON.stringify(orderStatus.Created)) || (purchase.order.status === JSON.stringify(orderStatus.Bought)) || (purchase.order.status === JSON.stringify(orderStatus.Backordered)))
+    {
+        purchase.order.buyer = purchase.buyer;
+        purchase.order.seller = purchase.seller;
+        purchase.order.cancelled = new Date().toISOString();
+        purchase.order.status = JSON.stringify(orderStatus.Cancelled);
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
+     }
 }
 /**
  * Record a request to order by seller from supplier
@@ -88,9 +109,21 @@ function OrderCancel(purchase) {
  */
 function OrderFromSupplier(purchase) {
     // YOUR CODE HERE
-
-
-
+    if (purchase.order.status === JSON.stringify(orderStatus.Bought))
+    {
+        purchase.order.provider = purchase.provider;
+        purchase.order.ordered = new Date().toISOString();
+        purchase.order.status = JSON.stringify(orderStatus.Ordered);
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
+     }
 }
 /**
  * Record a request to ship by supplier to shipper
@@ -99,9 +132,21 @@ function OrderFromSupplier(purchase) {
  */
 function RequestShipping(purchase) {
     // YOUR CODE HERE
-
-
-
+    if ((purchase.order.status === JSON.stringify(orderStatus.Ordered)) || (purchase.order.status === JSON.stringify(orderStatus.Backordered)))
+    {
+        purchase.order.shipper = purchase.shipper;
+        purchase.order.requestShipment = new Date().toISOString();
+        purchase.order.status = JSON.stringify(orderStatus.ShipRequest);
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
+     }
 }
 /**
  * Record a delivery by shipper
@@ -110,9 +155,22 @@ function RequestShipping(purchase) {
  */
 function Delivering(purchase) {
     // YOUR CODE HERE
-
-
-
+    if ((purchase.order.status === JSON.stringify(orderStatus.ShipRequest)) || (JSON.parse(purchase.order.status).code === orderStatus.Delivering.code))
+    {
+        purchase.order.delivering = new Date().toISOString();
+        var _status = orderStatus.Delivering;
+        _status.text += '  '+purchase.deliveryStatus;
+        purchase.order.status = JSON.stringify(_status);
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
+      }
 }
 /**
  * Record a delivery by shipper
@@ -121,9 +179,20 @@ function Delivering(purchase) {
  */
 function Deliver(purchase) {
     // YOUR CODE HERE
-
-
-
+    if ((purchase.order.status === JSON.stringify(orderStatus.ShipRequest)) || (JSON.parse(purchase.order.status).code === orderStatus.Delivering.code))
+    {
+        purchase.order.delivered = new Date().toISOString();
+        purchase.order.status = JSON.stringify(orderStatus.Delivered);
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
+     }
 }
  /**
  * Record a request for payment by the seller
@@ -132,9 +201,21 @@ function Deliver(purchase) {
  */
 function RequestPayment(purchase) {
     // YOUR CODE HERE
-
-
-
+    if ((JSON.parse(purchase.order.status).text === orderStatus.Delivered.text) || (JSON.parse(purchase.order.status).text === orderStatus.Resolve.text))
+    {
+        purchase.order.status = JSON.stringify(orderStatus.PayRequest);
+        purchase.order.financeCo = purchase.financeCo;
+        purchase.order.paymentRequested = new Date().toISOString();
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
+      }
 }
  /**
  * Record a payment to the seller
@@ -143,9 +224,20 @@ function RequestPayment(purchase) {
  */
 function AuthorizePayment(purchase) {
     // YOUR CODE HERE
-
-
-
+    if ((JSON.parse(purchase.order.status).text === orderStatus.PayRequest.text ) || (JSON.parse(purchase.order.status).text === orderStatus.Resolve.text ))
+    {
+        purchase.order.status = JSON.stringify(orderStatus.Authorize);
+        purchase.order.approved = new Date().toISOString();
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
+     }
 }
  /**
  * Record a payment to the seller
@@ -154,9 +246,19 @@ function AuthorizePayment(purchase) {
  */
 function Pay(purchase) {
     // YOUR CODE HERE
-
-
-
+    if (JSON.parse(purchase.order.status).text === orderStatus.Authorize.text )
+        {purchase.order.status = JSON.stringify(orderStatus.Paid);
+        purchase.order.paid = new Date().toISOString();
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
+     }
 }
  /**
  * Record a dispute by the buyer
@@ -165,9 +267,18 @@ function Pay(purchase) {
  */
 function Dispute(purchase) {
         // YOUR CODE HERE
-
-
-
+    purchase.order.status = JSON.stringify(orderStatus.Dispute);
+    purchase.order.dispute = purchase.dispute;
+    purchase.order.disputeOpened = new Date().toISOString();
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
 }
  /**
  * Resolve a seller initiated dispute
@@ -176,9 +287,18 @@ function Dispute(purchase) {
  */
 function Resolve(purchase) {
         // YOUR CODE HERE
-
-
-
+    purchase.order.status = JSON.stringify(orderStatus.Resolve);
+    purchase.order.resolve = purchase.resolve;
+    purchase.order.disputeResolved = new Date().toISOString();
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
 }
  /**
  * Record a refund to the buyer
@@ -187,9 +307,18 @@ function Resolve(purchase) {
  */
 function Refund(purchase) {
         // YOUR CODE HERE
-
-
-
+    purchase.order.status = JSON.stringify(orderStatus.Refund);
+    purchase.order.refund = purchase.refund;
+    purchase.order.orderRefunded = new Date().toISOString();
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
 }
  /**
  * Record a backorder by the supplier
@@ -198,9 +327,19 @@ function Refund(purchase) {
  */
 function BackOrder(purchase) {
         // YOUR CODE HERE
-
-
-
+    purchase.order.status = JSON.stringify(orderStatus.Backordered);
+    purchase.order.backorder = purchase.backorder;
+    purchase.order.dateBackordered = new Date().toISOString();
+    purchase.order.provider = purchase.provider;
+        return getAssetRegistry('org.acme.supplychain.Order')
+            .then(function (assetRegistry) {
+                return assetRegistry.update(purchase.order)
+                .then (function (_res)
+                {
+                    z2bEmit('Created', purchase.order);
+                    return (_res);
+                }).catch(function(error){return(error);});
+            });
 }
 
 /**
@@ -232,7 +371,6 @@ function z2bEmit(_event, _order)
     switch (_event)
     {
         case 'Created':
-
         break;
         case 'Bought':
         case 'PaymentRequested':
@@ -269,5 +407,5 @@ function z2bEmit(_event, _order)
         break;
     }
     emit(z2bEvent);
-    return 
+    return;
 }
